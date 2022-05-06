@@ -34,6 +34,9 @@ var currentState = 0;
 var lines = "";
 var userinput = "";
 var customMsg = "";
+var readChannel = "riekelt"
+var slideshowOutput = 'slideshow.txt';
+var slideshowImageOutput = 'slideshowimage.png';
 
 userinput = readline.question('Will there be GTA music? (y/n)');
 if (userinput.match("y")) {
@@ -66,7 +69,7 @@ ComfyJS.onChat = ( user, command, message, flags, extra ) => {
 		});
 	}
 }
-ComfyJS.Init( "riekelt" );
+ComfyJS.Init( readChannel );
 doSwap();
 setInterval(function() {
   // Invoke function every 10 minutes
@@ -79,7 +82,7 @@ function doSwap() {
   }
   if (options[currentState] == customMsg) {
     console.log(customMsg);
-    fs.writeFile('slideshow.txt', customMsg, (err) => {
+    fs.writeFile(slideshowImageOutput, customMsg, (err) => {
       if (err) throw err;
     });
   } else {
@@ -88,14 +91,14 @@ function doSwap() {
       //Fills lines with everything in a string array, seperated by \n.
       lines = data.toString();
       console.log(lines);
-      fs.writeFile('slideshow.txt', lines, (err) => {
+      fs.writeFile(slideshowOutput, lines, (err) => {
         if (err) throw err;
       });
     });
   }
   fs.readFile(optionsImage[currentState], function(err, data) {
     if (err) throw err;
-    fs.writeFile('slideshowimage.png', data, function(err) {
+    fs.writeFile(slideshowImageOutput, data, function(err) {
       if (err) throw err;
     });
   });
