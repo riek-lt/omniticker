@@ -8,6 +8,9 @@ node index.js
 ```
 
 There is a oneliner build-instruction with pkg in the first line of `index.js`.
+```bash
+pkg index.js --output omniticker
+```
 
 ##Features
 
