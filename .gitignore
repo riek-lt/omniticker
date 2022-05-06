@@ -7,6 +7,7 @@ textswapfiles.exe
 img.zip
 img/*.png
 img/*.jpg
+img/template riek.psd
 
 # Created by https://www.toptal.com/developers/gitignore/api/node
 # Edit at https://www.toptal.com/developers/gitignore?templates=node
