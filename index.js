@@ -1,4 +1,4 @@
-//pkg index.js --output textswapfiles
+//pkg index.js --output omniticker
 const interval = 12; //In seconds
 // var _ = require("lodash");
 var fs = require('fs');
@@ -11,22 +11,22 @@ var newestCheerer = "C:/Users/Rieke/Documents\\Streamlabels/most_recent_cheerer.
 var currentFollowers = "C:/Users/Rieke/Documents\\Streamlabels/total_follower_count.txt"
 var nowPlaying = "C:\Users/Rieke/Documents/GTA San Andreas User Files/Now Playing.txt"
 // var sessionSubs = "C:/Users/Rieke/Documents\\Streamlabels/session_subscriber_count.txt";
-var extraTXT = "D:/Gsync/Projects/Stream/fluff/textswapfiles/txts/extratxt.txt";
-var firstTxt = "D:/Gsync/Projects/Stream/fluff/textswapfiles/txts/first.txt";
-var twitterTxt = "D:/Gsync/Projects/Stream/fluff/textswapfiles/txts/twitter.txt"
-var twitchTxt = "D:/Gsync/Projects/Stream/fluff/textswapfiles/txts/twitch.txt"
-var kofiTxt = "D:/Gsync/Projects/Stream/fluff/textswapfiles/txts/kofi.txt"
+var extraTXT = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/extratxt.txt";
+var firstTxt = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/first.txt";
+var twitterTxt = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/twitter.txt"
+var twitchTxt = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/twitch.txt"
+var kofiTxt = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/kofi.txt"
 
-var subImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/sub.png";
-var cheerImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/cheers.png";
-var followerImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/followers.png";
-var nowPlayingImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/musiccover.png";
-var cstmMsgImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/msg.png";
-// var sesstarImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/sesstar.png";
-var oneImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/one.png";
-var twitterImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/twitter.png";
-var twitchImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/twitch.png";
-var kofiImage = "D:/Gsync/Projects/Stream/fluff/textswapfiles/img/kofi.png";
+var subImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/sub.png";
+var cheerImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/cheers.png";
+var followerImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/followers.png";
+var nowPlayingImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/musiccover.png";
+var cstmMsgImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/msg.png";
+// var sesstarImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/sesstar.png";
+var oneImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/one.png";
+var twitterImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/twitter.png";
+var twitchImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/twitch.png";
+var kofiImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/kofi.png";
 
 var options = [newestSub, newestFollower, newestCheerer, currentFollowers, twitterTxt, twitchTxt, kofiTxt];
 var optionsImage = [subImage, followerImage, cheerImage, followerImage, twitterImage, twitchImage, kofiImage];
