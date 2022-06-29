@@ -16,6 +16,7 @@ var firstTxt = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/first.txt";
 var twitterTxt = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/twitter.txt"
 var twitchTxt = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/twitch.txt"
 var kofiTxt = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/kofi.txt"
+var sevenTxt = "D:/Gsync/Projects/Stream/apps/Omniticker/txts/7tv.txt"
 
 var subImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/sub.png";
 var cheerImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/cheers.png";
@@ -27,9 +28,10 @@ var oneImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/one.png";
 var twitterImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/twitter.png";
 var twitchImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/twitch.png";
 var kofiImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/kofi.png";
+var sevenImage = "D:/Gsync/Projects/Stream/apps/Omniticker/img/7tv.png";
 
-var options = [newestSub, newestFollower, newestCheerer, currentFollowers, twitterTxt, twitchTxt, kofiTxt];
-var optionsImage = [subImage, followerImage, cheerImage, followerImage, twitterImage, twitchImage, kofiImage];
+var options = [newestSub, newestFollower, newestCheerer, currentFollowers, twitterTxt, twitchTxt, sevenTxt, kofiTxt];
+var optionsImage = [subImage, followerImage, cheerImage, followerImage, twitterImage, twitchImage, sevenImage, kofiImage];
 var currentState = 0;
 var lines = "";
 var userinput = "";
@@ -82,7 +84,7 @@ function doSwap() {
   }
   if (options[currentState] == customMsg) {
     console.log(customMsg);
-    fs.writeFile(slideshowImageOutput, customMsg, (err) => {
+    fs.writeFile(slideshowOutput, customMsg, (err) => {
       if (err) throw err;
     });
   } else {
