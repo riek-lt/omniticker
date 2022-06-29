@@ -12,7 +12,7 @@ There is a oneliner build-instruction with pkg in the first line of `index.js`.
 pkg index.js --output omniticker
 ```
 
-##Features
+## Features
 
 Asks if it wants to read the output of my music player.
 Asks for a custom message
