@@ -42,6 +42,7 @@ var customMsg = "";
 var readChannel = "riekelt"
 var slideshowOutput = 'slideshow.txt';
 var slideshowImageOutput = 'slideshowimage.png';
+var firstChatterID = '11287d42-05a6-48fd-a398-b23ae12a756a';
 
 userinput = readline.question('Will there be GTA music? (y/n)');
 if (userinput.match("y")) {
@@ -65,7 +66,7 @@ if (userinput !== "n") {
 //  console.log("Have fun streaming, gamer.");
 //}
 ComfyJS.onChat = ( user, command, message, flags, extra ) => {
-	if( extra.customRewardId == '11287d42-05a6-48fd-a398-b23ae12a756a') {
+	if( extra.customRewardId == firstChatterID) {
 		console.log(user + ' is now first');
 		  options.push(firstTxt);
 		  optionsImage.push(oneImage);
