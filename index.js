@@ -39,10 +39,10 @@ var currentState = 0;
 var lines = "";
 var userinput = "";
 var customMsg = "";
-var readChannel = "riekelt"
+var readChannel = "riekelt"       //Used for the first-chatter thing
+var firstChatterID = '11287d42-05a6-48fd-a398-b23ae12a756a';
 var slideshowOutput = 'slideshow.txt';
 var slideshowImageOutput = 'slideshowimage.png';
-var firstChatterID = '11287d42-05a6-48fd-a398-b23ae12a756a';
 
 userinput = readline.question('Will there be GTA music? (y/n)');
 if (userinput.match("y")) {
