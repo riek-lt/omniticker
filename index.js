@@ -58,7 +58,7 @@ if (userinput.match("y")) {
   console.log("have fun playing casual");
 }
 
-userinput = readline.question('Do you have a custom message? (n for no): ');
+userinput = readline.question('Do you have a custom message? (n for no): '); //Watch out with spamming enter
 if (userinput !== "n") {
   customMsg = userinput;
   options.push(customMsg);
