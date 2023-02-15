@@ -44,7 +44,7 @@ var firstChatterID = '11287d42-05a6-48fd-a398-b23ae12a756a';
 var slideshowOutput = 'slideshow.txt';
 var slideshowImageOutput = 'slideshowimage.png';
 
-userinput = readline.question('Will there be GTA music? (y/n)'); //Empty = no GTA, y is yes GTA
+userinput = readline.question('Will there be GTA music? (y)'); //Empty = no GTA, y is yes GTA
 if (userinput.match("y")) {
   options.push(nowPlaying);
   optionsImage.push(nowPlayingImage);
