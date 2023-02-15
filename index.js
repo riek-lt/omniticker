@@ -44,12 +44,20 @@ var firstChatterID = '11287d42-05a6-48fd-a398-b23ae12a756a';
 var slideshowOutput = 'slideshow.txt';
 var slideshowImageOutput = 'slideshowimage.png';
 
-userinput = readline.question('Will there be GTA music? (y/n)');
+userinput = readline.question('Will there be GTA music? (y/n)'); //Empty = no GTA, y is yes GTA
 if (userinput.match("y")) {
   options.push(nowPlaying);
   optionsImage.push(nowPlayingImage);
   console.log("there will be GTA music");
 }
+
+userinput = readline.question('is this casual? (y)'); // Empty = speedrun, y is casual
+if (userinput.match("y")) {
+  options.splice(options.indexOf(therunTxt));
+  optionsImage.splice(options.indexOf(therunImage));
+  console.log("have fun playing casual");
+}
+
 userinput = readline.question('Do you have a custom message? (n for no): ');
 if (userinput !== "n") {
   customMsg = userinput;
